@@ -17,3 +17,7 @@
 .row-fluid > .span-left-fixed {
     margin-left: 300px;
 }
+
+::selection{
+	background: #FF2AAA;
+};
