@@ -6,51 +6,40 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
-  <body style="background: url(img/loginBack.jpg); color: white; top: 100;">
-    <div class="container">
+  <body style="background: url(img/loginBack.jpg); color: white;">
+
+    <div class="container" style="margin-top: 10%;">
+    	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Wynez</a>
+          <div class="nav-collapse collapse">
+
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email" x-webkit-speech="">
+              <input class="span2" type="password" placeholder="Password" x-webkit-speech="">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
         	<div class="row-fluid">
             	<div class="span12">
                 	<div class="span6">
-                    	<div class="area">
-                            <form class="form-horizontal">
-                                <div class="heading">
-                                    <h4 class="form-heading">Sign In</h4>
-                                </div>
-                              
-                                <div class="control-group">
-                                    <label class="control-label" for="inputUsername">Username</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputUsername" placeholder="E.g. ashwinhegde">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputPassword">Password</label>
-                                    <div class="controls">
-                                        <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <label class="checkbox">
-                                            <input type="checkbox"> Keep me signed in   ¦
-                                            <a href="#" class="btn btn-link">Forgot my password</a>
-                                        </label>
-                                        <button type="submit" class="btn btn-success">Sign In</button>
-                                        <button type="button" class="btn">Help</button>
-                                    </div>
-                                </div>	
-                                <div class="alert alert-error">
-                                    <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <strong>Access Denied!</strong> Please provide valid authorization.
-                                </div>
-                            </form>	
-						</div>                           
+                		<h1>Wynez</h1> <br>
+                    	<h2>Discover the wyne you like, not the wyne experts like.</h2>   
                     </div>
                     <div class="span6">
                     	<div class="area">
                             <form class="form-horizontal">
                                 <div class="heading">
-                                    <h4 class="form-heading">Sign Up</h4>
+                                    <h4 class="text-center form-heading">Sign Up</h4> <br>
                                 </div>
                                 
                                 <div class="control-group">
