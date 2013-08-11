@@ -3,7 +3,7 @@
     position:fixed;
     left:20px;
     top:60px;
-    width:250px;
+    
 }
 
 .right-fixed {
@@ -11,7 +11,7 @@
     position:fixed;
     right:20px;
     top:60px;
-    width:250px;
+    
 }
 
 .row-fluid > .span-left-fixed {
