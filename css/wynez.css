@@ -1,0 +1,19 @@
+.left-fixed {
+    padding: 9px 0;
+    position:fixed;
+    left:20px;
+    top:60px;
+    width:250px;
+}
+
+.right-fixed {
+    padding: 9px 0;
+    position:fixed;
+    right:20px;
+    top:60px;
+    width:250px;
+}
+
+.row-fluid > .span-left-fixed {
+    margin-left: 300px;
+}
