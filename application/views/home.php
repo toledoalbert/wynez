@@ -34,7 +34,18 @@
               </ul>
               <div class="pull-right">
                 <ul class="nav pull-right">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, Albert <b class="caret"></b></a>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, 
+
+                      <?php
+
+                      if(isset($email)){
+                      echo $email;
+                      }
+                      ?>
+
+
+
+                     <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="/user/preferences"><i class="icon-cog"></i>Settings</a></li>
                             <li class="divider"></li>
