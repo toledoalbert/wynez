@@ -5,9 +5,11 @@ class Landing extends CI_Controller {
 
 	public function index()
 	{
-		
-		$this->login(null);
-		
+		if($this->session->userdata('is_logged_in')){
+			redirect('home');
+		}else{
+			$this->login(null);
+		}		
 	}
 
 	public function login($data){
@@ -24,11 +26,43 @@ class Landing extends CI_Controller {
 
 		if ($this->input->post('signupEmail') | $this->input->post('signupPassword')){
 
-			$this->form_validation->set_rules('signupEmail', 'Email', 'required|trim|xss_clean');
+			$this->form_validation->set_rules('signupEmail', 'Email', 'required|trim|xss_clean|valid_email|is_unique[users.email]');
 			$this->form_validation->set_rules('signupPassword', 'Password', 'required|md5|trim');
 
+			$this->form_validation->set_message('is_unique', 'There is already a user registered with this email.');
+
 			if($this->form_validation->run()){
-				redirect('home');
+
+				//generate the key
+				$key = md5(uniqid());
+
+				//load the email library
+				$this->load->library('email', array('mailtype'=>'html'));
+				$this->load->model('model_users');
+
+				//send email with the link
+				$this->email->from('toledoalbert@gmail.com', 'Wynez');
+				$this->email->to($this->input->post('signupEmail'));
+				$this->email->subject('Confirm your Wynez account');
+
+				$message = '<p>Thank you for signing up!</p>';
+				$message .= '<p><a href="'. base_url() .'landing/register_user/'.$key.'">Click here</a>to confirm your account.</p>';
+
+				$this->email->message($message);
+
+				if($this->model_users->add_temp_user($key)){
+
+					if($this->email->send()){
+						echo "email sent".$message."";
+					}
+					else{
+						echo "email failed";
+					}
+				}else{
+					echo 'user was not added to the database';
+				}
+
+				//redirect('home');
 			}
 			else{
 				$data['signupErrors'] = validation_errors();
@@ -83,5 +117,37 @@ class Landing extends CI_Controller {
 		}
 	}
 
+	public function register_user($key){
+
+		$this->load->model('model_users');
+
+		if($this->model_users->is_key_valid($key)){
+
+			if($newemail = $this->model_users->add_user($key)){
+
+
+				
+				$data = array(
+
+					'email' => $newemail,
+					'is_logged_in' => 1
+
+					);
+
+				$this->session->set_userdata($data);
+
+				redirect('home');
+
+			}else{
+				echo 'no success';
+			}
+		}else{
+			echo 'key invalid';
+		}
+
+	}
+
 
 }
+
+?>

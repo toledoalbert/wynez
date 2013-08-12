@@ -12,8 +12,8 @@
 
 					<form method="post" accept-charset="utf-8" action="<?php echo base_url();?>landing/login_validation" class="navbar-form pull-right">
 						
-						<input class="span2" name="loginEmail" type="text" placeholder="Email" x-webkit-speech="">
-						<input class="span2" name="loginPassword" type="password" placeholder="Password" x-webkit-speech="">
+						<input class="span2" name="loginEmail" type="text" placeholder="Email" x-webkit-speech="" value="<?php echo $this->input->post('loginEmail'); ?>">
+						<input class="span2" name="loginPassword" type="password" placeholder="Password" x-webkit-speech="" value="<?php echo $this->input->post('loginPassword'); ?>">
 						<button value="login" type="submit" class="btn">Log in</button>
 						<?php 
 

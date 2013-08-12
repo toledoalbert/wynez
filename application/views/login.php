@@ -3,8 +3,9 @@
 <div class="row-fluid">
 	<div class="span12">
 		<div class="span6">
-			<h1>Wynez</h1> <br>
-			<h2>Wynez helps you enjoy wyne better by discovering wynez that matches your taste.</h2>   
+			
+			<h1>Enjoy wyne better.</h1> <br>
+			<h3>Get recommendations according to your own taste, share what you drink, share what you like and meet people who likes what you like.</h3>   
 		</div>
 		<div class="span6">
 			<div class="area">
@@ -14,53 +15,48 @@
 						<h4 class="text-center form-heading">Sign Up</h4> <br>
 					</div>
 					
-						<?php 
+					<?php 
 
-						if(isset($signupErrors) === true){
+					if(isset($signupErrors) === true){
 
-							echo '<div class="alert alert-error">
-                                    <button type="button" class="close" data-dismiss="alert">x</button>';
+						echo '<div class="alert alert-error">
+						<button type="button" class="close" data-dismiss="alert">x</button>';
 
-							echo $signupErrors;  
+						echo $signupErrors;  
 
-							echo '</div>';
-						}
+						echo '</div>';
+					}
 
-						?>
+					?>
 
 					<div class="control-group">
-						<label class="control-label" for="inputFirst">First Name</label>
+						
 						<div class="controls">
-							<input type="text" id="inputFirst" name="firstName" placeholder="E.g. Albert">
+							<input type="text" id="inputUsername" name="username" placeholder="Pick a username" value="<?php echo $this->input->post('username'); ?>">
 						</div>
 					</div>
+					
 					<div class="control-group">
-						<label class="control-label" for="inputLast">Last Name</label>
+						
 						<div class="controls">
-							<input type="text" id="inputLast" name="lastName" placeholder="E.g. Toledo">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="inputEmail">Email</label>
-						<div class="controls">
-							<input type="text" id="inputEmail" name="signupEmail" placeholder="E.g. toledoalbert@wynez.com">
+							<input type="text" id="inputEmail" name="signupEmail" placeholder="Your e-mail" value="<?php echo $this->input->post('signupEmail'); ?>">
 						</div>
 					</div>
 
 					<div class="control-group">
-						<label class="control-label" for="inputPassword">Password</label>
+						
 						<div class="controls">
-							<input type="password" id="inputPassword" name="signupPassword" placeholder="Min. 8 Characters">
+							<input type="password" id="inputPassword" name="signupPassword" placeholder="Create a password">
+							<label for="inputPassword">Password must contain minimum 8 characters</label>
 						</div>
 					</div>
+
 					<div class="control-group">
 						<div class="controls">
-							<label class="checkbox">
-								<input type="checkbox"> I agree all your <a href="#">Terms of Services</a>
-							</label>
 							<button value="signup" type="submit" class="btn btn-success">Sign Up</button>
-							<button type="button" class="btn">Help</button>
+							<label>By clicking signup for Wynez, you agree to our terms of service and privacy policy.</label>
 						</div>
+
 					</div>	
 
 				</form>	
