@@ -65,9 +65,9 @@
     <div class="container-fluid">
 
       <div class="row-fluid">
-        
+
         <div class="visible-desktop span3 left-fixed">
-          
+
           <img src="img/AlbertProfile.jpg" class="img-polaroid">
           <br> <br>
           <a style="width: 94%; height: 90%;" class="btn">My Tastings</a><br> <br> 
@@ -80,50 +80,59 @@
 
         <div class="visible-desktop span6 span-left-fixed">
 
-          <a style="margin-top: 80px; width: 95%;" class="btn btn-info">New Tasting</a> <br> <br>
+          
+            <form class="form-horizontal" method="post" accept-charset="utf-8" action="<?php echo base_url();?>landing/signup_validation" />
+              <div class="heading">
 
-          <div class="well well-large">
-            
-            <h1 class="text-center">Brand Name</h1>
-            <h3 class="text-center">Type</h3>
-            <h4 class="text-center">Year</h4>
-            <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+                <h4 class="text-center form-heading">Sign Up</h4> <br>
+              </div>
 
-          </div>
+              <?php 
+              /*
+              if(isset($signupErrors) === true){
 
+                echo '<div class="alert alert-error">
+                <button type="button" class="close" data-dismiss="alert">x</button>';
 
-          <div class="well well-large">
-            
-            <h1 class="text-center text-error">Brand Name</h1>
-            <h3 class="text-center">Type</h3>
-            <h4 class="text-center">Year</h4>
-            <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+                echo $signupErrors;  
 
-          </div>
+                echo '</div>';
+              }*/
 
+              ?>
 
-          <div class="well well-large">
-            
-            <h1 class="text-center">Brand Name</h1>
-            <h3 class="text-center">Type</h3>
-            <h4 class="text-center">Year</h4>
-            <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+              <div class="control-group">
 
-          </div>
+                <div class="controls">
+                  <input type="text" id="inputUsername" name="username" placeholder="Pick a username" value="<?php echo $this->input->post('username'); ?>">
+                </div>
+              </div>
 
+              <div class="control-group">
 
-          <div class="well well-large">
-            
-            <h1 class="text-center">Brand Name</h1>
-            <h3 class="text-center">Type</h3>
-            <h4 class="text-center">Year</h4>
-            <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+                <div class="controls">
+                  <input type="text" id="inputEmail" name="signupEmail" placeholder="Your e-mail" value="<?php echo $this->input->post('signupEmail'); ?>">
+                </div>
+              </div>
 
-          </div>
+              <div class="control-group">
+
+                <div class="controls">
+                  <input type="password" id="inputPassword" name="signupPassword" placeholder="Create a password">
+                  <label for="inputPassword">Password must contain minimum 8 characters</label>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <div class="controls">
+                  <button value="signup" type="submit" class="btn btn-success">Submit Changes</button>
+                </div>
+
+              </div>  
+
+            </form> 
+
+                                
 
         </div>
 

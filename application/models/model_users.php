@@ -75,6 +75,12 @@ class Model_users extends CI_Model{
 		}
 	}
 
+	public function set_profile_pic(){
+
+		
+		
+	}
+
 }
 
 ?>

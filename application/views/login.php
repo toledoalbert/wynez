@@ -29,12 +29,6 @@
 
 					?>
 
-					<div class="control-group">
-						
-						<div class="controls">
-							<input type="text" id="inputUsername" name="username" placeholder="Pick a username" value="<?php echo $this->input->post('username'); ?>">
-						</div>
-					</div>
 					
 					<div class="control-group">
 						
