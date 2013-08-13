@@ -82,10 +82,12 @@
 
           <h4 style="margin-top: 80px;" >What kind of wyne did you taste today?</h4>
           <form action="">
-          <input class="brandfield" type="text" placeholder="Brand">
-          <input class="typefield" type="text" placeholder="Type">
-          <input class="yearfield" type="text" placeholder="Year">
-          <input class="gradefield" type="text" placeholder="Grade">
+            <div class="row-fluid">
+          <input class="span12" type="text" placeholder="Brand">
+          <input class="span4" type="text" placeholder="Type">
+          <input class="span4" type="text" placeholder="Year">
+          <input class="span4" type="text" placeholder="Grade">
+          </div>
 
           <button class="btn-success btn post">Post new tasting</button>
           </form>
