@@ -65,9 +65,9 @@
     <div class="container-fluid">
 
       <div class="row-fluid">
-        
+
         <div class="visible-desktop span3 left-fixed">
-          
+
           <img src="img/AlbertProfile.jpg" class="img-polaroid">
           <br> <br>
           <a style="width: 94%; height: 90%;" class="btn">My Tastings</a><br> <br> 
@@ -80,10 +80,17 @@
 
         <div class="visible-desktop span6 span-left-fixed">
 
-          <a style="margin-top: 80px; width: 95%;" class="btn btn-info">New Tasting</a> <br> <br>
+          <h4 style="margin-top: 80px;" >What kind of wyne did you taste today?</h4>
+          <form action="">
+          <input class="brandfield" type="text" placeholder="Brand">
+          <input class="typefield" type="text" placeholder="Type">
+          <input class="yearfield" type="text" placeholder="Year">
+          <input class="gradefield" type="text" placeholder="Grade">
 
+          <button class="btn-success btn post">Post new tasting</button>
+          </form>
           <div class="well well-large">
-            
+
             <h1 class="text-center">Brand Name</h1>
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>
@@ -94,7 +101,7 @@
 
 
           <div class="well well-large">
-            
+
             <h1 class="text-center text-error">Brand Name</h1>
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>
@@ -105,7 +112,7 @@
 
 
           <div class="well well-large">
-            
+
             <h1 class="text-center">Brand Name</h1>
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>
@@ -116,7 +123,7 @@
 
 
           <div class="well well-large">
-            
+
             <h1 class="text-center">Brand Name</h1>
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>

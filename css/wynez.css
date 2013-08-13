@@ -20,4 +20,24 @@
 
 ::selection{
 	background: #FF2AAA;
-};
+}
+
+.brandfield{
+    width: 535px;
+}
+
+.typefield{
+    width: 166px;
+}
+
+.yearfield{ 
+    width: 166px;
+}
+
+.gradefield{
+    width: 166px;
+}
+
+.post{
+    width: 550px;
+}

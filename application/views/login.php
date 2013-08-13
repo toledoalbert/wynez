@@ -47,7 +47,7 @@
 
 					<div class="control-group">
 						<div class="controls">
-							<button value="signup" type="submit" class="btn btn-success">Sign Up</button>
+							<button value="signup" type="submit" class="btn btn-success">Sign Up for Wynez</button> <br> <br>
 							<label>By clicking signup for Wynez, you agree to our terms of service and privacy policy.</label>
 						</div>
 
