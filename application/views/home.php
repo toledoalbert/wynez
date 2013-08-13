@@ -96,7 +96,7 @@
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>
             <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+            <h4 class="text-center">Rating</h4> 
 
           </div>
 
@@ -107,7 +107,7 @@
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>
             <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+            <h4 class="text-center">Rating</h4> 
 
           </div>
 
@@ -118,7 +118,7 @@
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>
             <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+            <h4 class="text-center">Rating</h4> 
 
           </div>
 
@@ -129,7 +129,7 @@
             <h3 class="text-center">Type</h3>
             <h4 class="text-center">Year</h4>
             <p class="text-center">Place</p>
-            <p class="text-center">Stars</p> 
+            <h4 class="text-center">Rating</h4> 
 
           </div>
 
