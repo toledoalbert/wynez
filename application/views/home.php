@@ -89,6 +89,7 @@
 
           <button class="btn-success btn post">Post new tasting</button>
           </form>
+          <p>Albert Toledo tasted a wyne 10 minutes ago.</p>
           <div class="well well-large">
 
             <h1 class="text-center">Brand Name</h1>
@@ -99,7 +100,7 @@
 
           </div>
 
-
+          <p>Albert Toledo tasted a wyne 10 minutes ago.</p>
           <div class="well well-large">
 
             <h1 class="text-center text-error">Brand Name</h1>
@@ -110,7 +111,7 @@
 
           </div>
 
-
+          <p>Nesim Halyo tasted a wyne 10 minutes ago.</p>
           <div class="well well-large">
 
             <h1 class="text-center">Brand Name</h1>
