@@ -22,22 +22,25 @@
 	background: #FF2AAA;
 }
 
-.brandfield{
-    width: 535px;
+.sidebar-nav-fixed {
+    position:fixed;
+    top:60px;
+    width:21.97%;
 }
 
-.typefield{
-    width: 166px;
+@media (max-width: 767px) {
+    .sidebar-nav-fixed {
+        position:static;
+        width:auto;
+    }
 }
 
-.yearfield{ 
-    width: 166px;
+@media (max-width: 979px) {
+    .sidebar-nav-fixed {
+        top:70px;
+    }
 }
 
-.gradefield{
-    width: 166px;
-}
-
-.post{
-    width: 550px;
+.margless{
+    margin:0 !important;
 }

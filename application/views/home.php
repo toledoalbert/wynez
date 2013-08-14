@@ -61,36 +61,46 @@
 
   <!-- end navbar -->
 
-  <div class="container">
+  
     <div class="container-fluid">
-
+      <div  style="margin-top: 70px;" class="visible-desktop"></div>
       <div class="row-fluid">
 
-        <div class="visible-desktop span3 left-fixed">
+        <div class="span3">
 
-          <img src="img/AlbertProfile.jpg" class="img-polaroid">
-          <br> <br>
-          <a style="width: 94%; height: 90%;" class="btn">My Tastings</a><br> <br> 
-          <a style="width: 94%; height: 90%;" class="btn">Taste Buddies</a><br> <br>
-          <a style="width: 94%; height: 90%;" class="btn">Close by</a><br> <br>
-          <a style="width: 94%; height: 90%;" class="btn">Discover</a><br> <br>
-          <a style="width: 94%; height: 90%;" class="btn">Discover</a><br> <br>
+          <img src="img/AlbertProfile.jpg" class="hidden-phone img-polaroid">
+          <br class="hidden-phone"> <br class="hidden-phone">
+          <a class="span12 btn">My Tastings</a><br class="hidden-phone"> <br> 
+          <a class="span12 btn">Taste Buddies</a><br class="hidden-phone"> <br>
+          <a class="span12 btn">Close by</a><br class="hidden-phone"> <br>
+          <a class="span12 btn">Discover</a><br class="hidden-phone"> <br>
+          <a class="span12 btn">Discover</a><br class="hidden-phone"> <br>
 
         </div>
 
-        <div class="visible-desktop span6 span-left-fixed">
 
-          <h4 style="margin-top: 80px;" >What kind of wyne did you taste today?</h4>
-          <form action="">
-            <div class="row-fluid">
+        <div class=" span6">
+
+         
+          <form class="hidden-phone" action="">
+           <h4>What kind of wyne did you taste today?</h4>
+          
           <input class="span12" type="text" placeholder="Brand">
+          <div class="row-fluid">
           <input class="span4" type="text" placeholder="Type">
           <input class="span4" type="text" placeholder="Year">
           <input class="span4" type="text" placeholder="Grade">
           </div>
 
-          <button class="btn-success btn post">Post new tasting</button>
+          <button class="btn-success btn span12 margless">Post new tasting</button>
+          
+          
+
           </form>
+          
+          <a class="visible-phone btn-success btn span12">Post new tasting</a>
+          <br class="visible-phone"></br>
+
           <p>Albert Toledo tasted a wyne 10 minutes ago.</p>
           <div class="well well-large">
 
@@ -137,14 +147,14 @@
 
         </div>
 
-        <div  class="visible-desktop span3 right-fixed">
+        <div  class="span3">
           Suggestions
         </div>
 
       </div>
 
     </div>
-  </div>
+  
   <!-- scripts -->
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
