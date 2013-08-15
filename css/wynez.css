@@ -75,3 +75,35 @@ color: rgb(156, 48, 48);
 margin-bottom: 5px;
 }
 
+.label-input{
+    background: none !important;
+border: none !important;
+box-shadow: none !important;
+border-radius: 0px !important;
+color: red !important;
+}
+
+.label-input:focus{
+    border-bottom: 2px solid red !important;
+}
+
+.brandName{
+    font-size: 22px !important;
+}
+
+.type{
+    font-size: 20px !important;
+}
+
+.year{
+    font-size: 18px !important;
+}
+
+.place{
+    font-size: 15px !important;
+}
+
+.rating{
+    font-size: 13px !important;
+}
+

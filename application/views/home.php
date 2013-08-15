@@ -105,11 +105,11 @@
           <p>Albert Toledo tasted a wyne 10 minutes ago.</p>
           <div class="wine-label">
 
-            <h1 class="text-center">Brand Name</h1>
-            <h3 class="text-center">Type</h3>
-            <h4 class="text-center">Year</h4>
-            <p class="text-center">Place</p>
-            <h4 class="text-center">Rating</h4> 
+            <input type="text"  class=" brandName span12 label-input text-center" placeholder="Brand Name">
+            <input type="text"  class=" type span12 label-input text-center" placeholder="Type">
+            <input type="text"  class=" year span12 label-input text-center" placeholder="Year">
+            <input type="text" class=" place span12 label-input text-center" placeholder="Place">
+            <input type="text"  class=" rating span12 label-input text-center" placeholder="Rating">
 
           </div>
 
