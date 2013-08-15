@@ -51,6 +51,7 @@
     border-radius: 0px !important;
     color: rgb(172, 105, 105) !important;
     font-size: 20px !important;
+    box-shadow: none !important;
 }
 
 .btn-flat-pink{
