@@ -69,12 +69,13 @@
         <div class="span3">
 
           <img src="img/AlbertProfile.jpg" class="hidden-phone img-polaroid">
-          <br class="hidden-phone"> <br class="hidden-phone">
-          <a class="span12 btn">My Tastings</a><br class="hidden-phone"> <br> 
-          <a class="span12 btn">Taste Buddies</a><br class="hidden-phone"> <br>
-          <a class="span12 btn">Close by</a><br class="hidden-phone"> <br>
-          <a class="span12 btn">Discover</a><br class="hidden-phone"> <br>
-          <a class="span12 btn">Discover</a><br class="hidden-phone"> <br>
+          <h4 class="text-center">Albert Toledo</h4 class="text-center">
+          
+          <a class="span12 btn-flat-pink text-center">My Tastings</a><br class="hidden-phone"> <br> 
+          <a class="span12 btn-flat-pink text-center">Taste Buddies</a><br class="hidden-phone"> <br>
+          <a class="span12 btn-flat-pink text-center">Close by</a><br class="hidden-phone"> <br>
+          <a class="span12 btn-flat-pink text-center">Discover</a><br class="hidden-phone"> <br>
+          <a class="span12 btn-flat-pink text-center">Discover</a><br class="hidden-phone"> <br>
 
         </div>
 
@@ -85,14 +86,14 @@
           <form class="hidden-phone" action="">
            <h4>What kind of wyne did you taste today?</h4>
           
-          <input class="span12" type="text" placeholder="Brand">
+          <input class="textfield span12" type="text" placeholder="Brand">
           <div class="row-fluid">
-          <input class="span4" type="text" placeholder="Type">
-          <input class="span4" type="text" placeholder="Year">
-          <input class="span4" type="text" placeholder="Grade">
+          <input style="margin-left: 5px;" class="textfield span4" type="text" placeholder="Type">
+          <input style="margin-left: 5px;" class="textfield span4" type="text" placeholder="Year">
+          <input style="margin-left: 5px;" class="textfield span4" type="text" placeholder="Grade">
           </div>
 
-          <button class="btn-success btn span12 margless">Post new tasting</button>
+          <button class="btn-flat-pink span12 margless">Post new tasting</button>
           
           
 
@@ -102,7 +103,7 @@
           <br class="visible-phone"></br>
 
           <p>Albert Toledo tasted a wyne 10 minutes ago.</p>
-          <div class="well well-large">
+          <div class="wine-label">
 
             <h1 class="text-center">Brand Name</h1>
             <h3 class="text-center">Type</h3>
@@ -113,7 +114,7 @@
           </div>
 
           <p>Albert Toledo tasted a wyne 10 minutes ago.</p>
-          <div class="well well-large">
+          <div class="wine-label">
 
             <h1 class="text-center text-error">Brand Name</h1>
             <h3 class="text-center">Type</h3>
@@ -124,7 +125,7 @@
           </div>
 
           <p>Nesim Halyo tasted a wyne 10 minutes ago.</p>
-          <div class="well well-large">
+          <div class="wine-label">
 
             <h1 class="text-center">Brand Name</h1>
             <h3 class="text-center">Type</h3>
@@ -135,7 +136,7 @@
           </div>
 
 
-          <div class="well well-large">
+          <div class="wine-label">
 
             <h1 class="text-center">Brand Name</h1>
             <h3 class="text-center">Type</h3>

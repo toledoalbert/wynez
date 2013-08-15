@@ -44,3 +44,34 @@
 .margless{
     margin:0 !important;
 }
+
+.textfield{
+    border: none !important; 
+    background-color: rgb(233, 233, 233) !important;
+    border-radius: 0px !important;
+    color: rgb(172, 105, 105) !important;
+    font-size: 20px !important;
+}
+
+.btn-flat-pink{
+    background-color: rgb(209, 45, 104);
+    color: white;
+    font-weight: lighter;
+    border: none;
+    padding: 3px 3px 3px 3px;
+    cursor: pointer;
+}
+
+.btn-flat-pink:hover{
+    background-color: rgb(173, 35, 85);
+    text-decoration: none;
+    color: white;
+}
+
+.wine-label{
+    background-color: rgb(238, 234, 224);
+padding: 5px 5px 5px 5px;
+color: rgb(156, 48, 48);
+margin-bottom: 5px;
+}
+
