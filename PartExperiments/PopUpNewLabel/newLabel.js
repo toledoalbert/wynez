@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	$('#details').hide();
+	$('#notes').hide();
 
 	$('#flip').click(function() {
 
@@ -21,7 +22,7 @@ $(document).ready(function(){
 					$('#details').hide();
 					$('#label').show();
 					$('#flip').text('Details');
-					
+
 				}
 
 			}
@@ -30,6 +31,13 @@ $(document).ready(function(){
 
 	});
 
-	
+	$('#bNote').click(function(){
+
+
+		$('#notes').toggle("blind", 200);
+
+
+	});
+
 
 });
