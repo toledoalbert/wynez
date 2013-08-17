@@ -2,12 +2,14 @@ $(document).ready(function(){
 
 	$('#details').hide();
 	$('#notes').hide();
+	$('#label').show();
 
 	$('#flip').click(function() {
 
 
 		$("#flipBox").flip({
 			direction:'rl',
+			color: 'rgb(223, 213, 192)',
 
 			onEnd: function(){
 

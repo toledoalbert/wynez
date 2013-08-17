@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 	<title>New Tasting</title>
@@ -7,60 +8,129 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link rel="stylesheet" href="css/wynez.css">
+	<link href="bootstrap.css" rel="stylesheet" media="screen">
 
-</head>
+	<style>
+
+	#notes{
+		background-color: whitesmoke !important;
+		border-radius: 3px !important;
+		border: solid rgb(201, 201, 201);
+		border-top: none;
+		border-width: 2px;
+		width: 380px !important;
+		margin: 0 auto !important;
+		margin-top: -12px !important;
+	}
+
+	#noteField{
+		min-height: 200px;
+		width: 340px;
+		text-align: left;
+	}
+
+	.tastingForm{
+		width: 400px;
+		background-color: rgb(223, 213, 192);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#flipBox{
+		background-color: rgb(223, 213, 192);
+	}
+
+	#page{
+		width: 400px;
+	}
+
+	.flipButtons{
+		background-color: rgb(223, 213, 192);
+	}
+
+	.label-field {
+		background-color: rgb(223, 213, 192) !important;
+		box-shadow: none !important;
+		border: none !important;
+		border-bottom: 1px solid white !important;
+		border-radius: 0px !important;
+		text-align: center;
+		font-size: 18px !important;
+	}
+
+	.formTitle {
+		font-size: 23px;
+		color: rgb(255, 255, 255);
+		text-shadow: 1px 1px 4px #8D1D4F;
+		font-weight: lighter;
+	}
 
 
-<body>
+	</style>
 
-	<div id="flipBox" style='background-color: red; width: 300px;'>
+	<style type="text/css"></style></head>
 
-			<form id='label' action="">
 
-				<h4>Label</h4>
-				<input type="text"> <br>
-				<input type="text"> <br>
-				<input type="text"> <br>
-				<input type="text"> <br>
+	<body style="">
 
-			</form>
+		<div id="page" class="container">
 
-			<form id='details' action="">
+			<div id="flipBox" class="tastingForm" >
 
-				<h4>Details</h4>		
-				<input type="text"> <br>
-				<input type="text"> <br>
-				<input type="text"> <br>
-				<input type="text"> <br>
+				<div id="label" class="tastingForm text-center" style="display: none;">
+					<form action="">
 
-			</form>
+						<h4 class="formTitle" >Label</h4>
+						<input type="text" style="
+						" class="label-field"> <br>
+						<input type="text" class="label-field"> <br>
+						<input type="text" class="label-field"> <br>
+						<input type="text" class="label-field" style="
+						"> <br>
 
-		<button id='bNote'>Note</button>
-		<button id='flip'>Details</button>
+					</form>
+				</div>
 
-	</div>
-		
-		<div id="notes" style="background-color: grey; width: 300px;">
-			<form action="">
+				<div id="details" class="tastingForm text-center" style="display: block;">
+					<form action="">
 
-				<h4>Notes</h4>		
-				<input type="text"> <br>
-				<input type="text"> <br>
-				<input type="text"> <br>
-				<input type="text"> <br>
+						<h4 class="formTitle" >Details</h4>		
+						<input type="text" style="
+						" class="label-field"> <br>
+						<input type="text" class="label-field"> <br>
+						<input type="text" class="label-field"> <br>
+						<input type="text" class="label-field" style="
+						"> <br>
 
-			</form>
+					</form>
+				</div>
+
+				<div class="text-center flipButtons">
+
+					<button id="bNote" class="btn btn-success">Note</button>
+					<button id="flip" class="btn btn-info">Details</button>
+
+				</div>
+
+			</div>
+
+			<div id="notes" style="background-color: grey; width: 400px; display: block; margin-top: -10px;" class="text-center">
+				<form action="">
+
+					<h4>Notes</h4>		
+					<input id="noteField" type="text">
+
+				</form>
+			</div>
+
 		</div>
 
+		<!-- scripts -->
+		<script src="jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="newLabel.js"></script>
+		<script src="jquery.flip.min.js"></script>
 
 
-	<!-- scripts -->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="jquery-ui.min.js"></script>
-	<script src="newLabel.js"></script>
-	<script src="jquery.flip.min.js"></script>
 
-</body>
-</html>
+	</body></html>
